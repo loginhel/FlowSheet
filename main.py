@@ -3,6 +3,7 @@ import time
 import os
 import sys
 import fileinput
+import random
 
 test = ''
 
@@ -90,3 +91,39 @@ class FlowSheet:
         #arow =
         #fo.write(self.ConnectNumber)
 
+def hex66(num):
+    #转换成66进制字符
+    chars = 'AaBbCcj78KkLlMmN_nOoPpQ+qR1234rSsTtUuVvDdEe/FfGgHhIiJWw-XxYyZz0569'
+    a = []
+    while num != 0:
+        mo = num % 66
+        a.append(chars[mo])
+        num = num / 66
+    a.reverse()
+    out = ''.join(a)
+    return out
+
+
+def getId():
+    chars = 'AaBbCcj78KkLlMmN_nOoPpQ+qR1234rSsTtUuVvDdEe/FfGgHhIiJWw-XxYyZz0569'
+    a = []
+    count = 0
+    while count < 8:
+        a.append(chars[random.randint(0, 65)])
+        count = count + 1
+    out = ''.join(a)
+    return out
+
+
+
+#获取唯一标识
+#def getId():
+    #66进制位数对应10进制数范围参考：
+    #1位：0-65
+    #2位：66-4355
+    #3位：4355-287495
+    #4位：287495-18974736
+    #5位：18974736-1252332576
+    #6位：1252332576-82653950016
+
+print(getId())
