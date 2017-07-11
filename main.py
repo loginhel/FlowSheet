@@ -4,6 +4,8 @@ import os
 import sys
 import fileinput
 
+test = ''
+
 #if os.path.exists(fname):
 
 timeNow = datetime.datetime.now()
