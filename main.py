@@ -6,6 +6,7 @@ import fileinput
 
 test = ''
 
+sdsjdkjsdk = ''
 #if os.path.exists(fname):
 
 timeNow = datetime.datetime.now()
