@@ -14,6 +14,9 @@ txtName = "AAA_99_" + timeNow.strftime('%Y%m%d') + "_" + timeNow.strftime('%H%M'
 
 fobj = open(txtName, "w+")
 
+hjkjkj = ''
+jkj = ''
+
 Num = 0
 fileinput.input()
 
