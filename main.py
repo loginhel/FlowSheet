@@ -14,7 +14,7 @@ timeNow = datetime.datetime.now()
 txtName = "AAA_99_" + timeNow.strftime('%Y%m%d') + "_" + timeNow.strftime('%H%M') + "_0000.TXT"
 
 fobj = open(txtName, "w+")
-
+sdsdsd = ''
 hjkjkj = ''
 jkj = ''
 
